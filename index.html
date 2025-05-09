@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:title" content="震驚！他竟然這樣說...">
+  <meta property="og:description" content="你一定要點開來看！">
+  <meta property="og:image" content="https://i.imgur.com/3pEkBPK.jpeg">
+  <meta property="og:url" content="https://fanyu.github.io/line-prank">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>整活機器人</title>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+  <script>
+    liff.init({ liffId: "1657022499-njBkN1k3" }).then(() => {
+      if (liff.isInClient()) {
+        liff.sendMessages([
+          {
+            type: 'text',
+            text: '我的屁眼很癢'
+          }
+        ]).then(() => {
+          liff.closeWindow();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
